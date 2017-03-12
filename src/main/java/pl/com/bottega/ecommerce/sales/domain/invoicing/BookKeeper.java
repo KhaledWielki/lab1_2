@@ -23,6 +23,8 @@ import pl.com.bottega.ecommerce.canonicalmodel.publishedlanguage.Id;
 import pl.com.bottega.ecommerce.sharedkernel.Money;
 
 public class BookKeeper {
+	
+	private InvoiceFactory invoiceFactory;
 
 	public Invoice issuance(ClientData client, List<RequestItem> items) {
 		Invoice invoice = new Invoice(Id.generate(), client);
