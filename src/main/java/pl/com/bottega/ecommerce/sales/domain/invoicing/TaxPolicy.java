@@ -5,6 +5,6 @@ import pl.com.bottega.ecommerce.sharedkernel.Money;
 
 public interface TaxPolicy {
 
-	public Tax calculateTax(ProductType productType, Money net);
+	public Tax calculateTax(ProductType type, Money netWorth);
 
 }
